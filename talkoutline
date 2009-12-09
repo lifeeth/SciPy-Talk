@@ -1,0 +1,50 @@
+1) Current state of instrumentation software 
+  => LabView -> proprietory crap
+  => C - code -> Find the libraries and debug for ever
+  => Python -> Whats python :D ?
+
+2) Labview -> Put in the cost estimates here.
+  => Why is it popular?
+      => Graphical programming environment -> Drag drop , click connect
+      => Idea of low level communication protocols -> minimal -> Good / bad?
+      => A double clickable installer for almost all hardware;)
+  => So whats bad about it?
+      => The LabVIEW(TM) Academic Premium Suite costs -> INR 111,600.00
+      => Requires significantly more resources to run -> Give a comparison //100 Rs ke paneer curry ke liye 200 Rs ka masala :)
+      => Building a stand-alone application with LabVIEW requires the Application Builder component which is included with the 
+	  Professional Development System but requires a separate purchase if using the Base Package or Full Development System
+	  Compiled executables produced by the Application Builder are not truly standalone in that they also require that 
+	  the LabVIEW run-time engine be installed on any target computer on which users run the application.
+      =>  The use of standard controls requires a runtime library for any language and all major operating system suppliers supply the required libraries 
+	  for common languages such as C. However, the runtime required for LabVIEW is not supplied with any operating system and is 
+	  required to be specifically installed by the administrator or user. This requirement can cause problems if an application is 
+	  distributed to a user who may be prepared to run the application but does not have the inclination or permission to install 
+	  additional files on the host system prior to running the executable.
+      =>  Support for non Windows platforms, especially for drivers, 
+	  tends to be poor and does not lend itself to general purpose data acquisition, for instance, through VIs which require lengthy 
+	  initialisation making it difficult to support scripts and external APIs.While it is easy to produce seemingly parallel code, it is 
+	  difficult for beginners to control this at a fine-grained level making multi-interface systems unwieldy and unreliable. 
+      =>  The detailed complexity of such systems is often hidden and inaccessible or obfuscated by the top-level design, making procedural 
+	  events across devices difficult to manage.
+[1]
+ 
+3) Are there any Open Source alternatives?
+  => None that match the graphical programming environment of LabVIEW
+  => Python -> close enough with its simplistic approach.
+
+4) Why/How do we do it with Python?
+  => Most of the devices run with either a GPIB , Serial or TCP/IP
+  => Scripting environment to enable quick debugging + swig incase you itch for those extra optimizations :)
+  => Can generate standalone cross platform applications with py2exe or py2dmg (We dont need one for linux :))
+  => Follows the usual programming paradigm -> Making it simpler to get hooked on to if one lets go of the initial fear of foreign languages.
+  => Packages like PySerial and PyVisa enable easy integration.
+      -> Open source code - You can see where something might be going wrong and fix it?
+			  - \\Show a code demo
+      -> Plethora of python libraries available to do post collection analysis. \\ Show some integration with Matplot lib
+      -> Easy to make GUI for use by non programmers \\ Show code examples
+
+5) Provide links to the slides, slides, pyserial docs, wxpython, scipy
+
+
+
+[1] Source : Wikipedia
